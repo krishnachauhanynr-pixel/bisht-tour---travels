@@ -1,0 +1,8 @@
+{
+  "name": "Bisht Tour & Travels",
+  "description": "Reliable Travel & Cab Services in Rishikesh, specializing in Char Dham Yatra and Airport Transfers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
