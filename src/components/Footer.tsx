@@ -1,4 +1,3 @@
-import { Car, MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -81,11 +80,6 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <a href="tel:+917895616847" className="text-gray-300 hover:text-white transition-colors">
                   +91 7895616847
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <a href="mailto:info@bishttravels.com" className="text-gray-300 hover:text-white transition-colors">
-                  info@bishttravels.com
                 </a>
               </li>
             </ul>

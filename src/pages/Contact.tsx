@@ -1,7 +1,22 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import type { FormEvent } from 'react';
+import { MapPin, Phone } from 'lucide-react';
 import SEO from '../components/SEO';
 
 export default function Contact() {
+  const sendInquiry = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const message = [
+      'Hello, I would like to make a travel inquiry.',
+      `Name: ${formData.get('name')}`,
+      `Phone: ${formData.get('phone')}`,
+      `Inquiry: ${formData.get('message')}`,
+    ].join('\n');
+
+    window.open(`https://wa.me/917895616847?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="flex flex-col w-full bg-editorial-bg min-h-[calc(100vh-64px)] text-editorial-text">
       <SEO 
@@ -52,36 +67,27 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 mt-1">
-                    <Mail className="h-5 w-5 text-editorial-text" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-editorial-text text-sm uppercase tracking-wider mb-2">Email Address</h4>
-                    <a href="mailto:info@bishttravels.com" className="text-editorial-subtext hover:text-editorial-accent transition-colors">info@bishttravels.com</a>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Contact Form Placeholder */}
             <div className="bg-white p-10 border border-editorial-border shadow-sm">
               <h3 className="font-serif text-2xl text-editorial-text mb-8">Send a Message</h3>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={sendInquiry}>
                 <div>
-                  <label className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Full Name</label>
-                  <input type="text" className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors" placeholder="Your Name" />
+                  <label htmlFor="inquiry-name" className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Full Name</label>
+                  <input id="inquiry-name" name="name" type="text" required className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors" placeholder="Your Name" />
                 </div>
                 <div>
-                  <label className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Phone Number</label>
-                  <input type="tel" className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors" placeholder="Your Phone" />
+                  <label htmlFor="inquiry-phone" className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Phone Number</label>
+                  <input id="inquiry-phone" name="phone" type="tel" required className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors" placeholder="Your Phone" />
                 </div>
                 <div>
-                  <label className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Message / Inquiry Details</label>
-                  <textarea rows={5} className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors resize-none" placeholder="Tell us about your travel plans..."></textarea>
+                  <label htmlFor="inquiry-message" className="text-[10px] font-bold text-editorial-text uppercase tracking-widest block mb-2">Message / Inquiry Details</label>
+                  <textarea id="inquiry-message" name="message" rows={5} required className="w-full px-4 py-3 bg-white border border-editorial-border focus:border-editorial-accent outline-none text-sm transition-colors resize-none" placeholder="Tell us about your travel plans..."></textarea>
                 </div>
                 <button type="submit" className="w-full py-4 bg-editorial-text hover:bg-opacity-90 text-white font-bold uppercase text-[10px] tracking-widest transition-colors mt-4">
-                  Send Message
+                  Continue to WhatsApp
                 </button>
               </form>
             </div>
