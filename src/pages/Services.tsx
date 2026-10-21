@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full bg-editorial-bg text-editorial-text">
       <SEO 
-        title="Char Dham Yatra Taxi & Delhi Airport Transfers | Bisht Travels" 
+        title="Char Dham Yatra Taxi & Delhi Airport Transfers | Soban Bisht Tour and Travel"
         description="Affordable taxi rates in Rishikesh. Swift Dzire at ₹4000 and 7-seater Ertiga at ₹6500. We cover Delhi Airport to Rishikesh, Haridwar, Dehradun, and Ghansali." 
         canonicalUrl="https://bishttravels.com/services" 
       />

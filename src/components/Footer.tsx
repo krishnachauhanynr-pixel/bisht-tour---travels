@@ -20,10 +20,10 @@ export default function Footer() {
           {/* Brand & About */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group mb-4">
-              <span className="font-serif text-xl font-bold text-white tracking-tight">Bisht Tour & Travels</span>
+              <span className="font-serif text-xl font-bold text-white tracking-tight">Soban Bisht Tour and Travel</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Your reliable travel partner in Rishikesh. Providing safe, comfortable, and timely 24/7 cab services.
+              Owned by Soban Singh, your reliable travel partner in Rishikesh. Providing safe, comfortable, and timely 24/7 cab services.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-white/10 bg-editorial-text">
         <div className="container mx-auto px-4 md:px-10 py-6 text-left text-[9px] text-[#666] uppercase tracking-tighter">
-          <p>Copyright © {currentYear} Bisht Tour & Travels</p>
+          <p>Copyright © {currentYear} Soban Bisht Tour and Travel</p>
         </div>
       </div>
     </footer>

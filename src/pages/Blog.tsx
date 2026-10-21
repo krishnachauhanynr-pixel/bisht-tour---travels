@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <div className="flex flex-col flex-grow py-24 px-4 bg-editorial-bg border-y border-editorial-border">
       <SEO 
-        title="Uttarakhand Travel Journal | Bisht Tour & Travels" 
+        title="Uttarakhand Travel Journal | Soban Bisht Tour and Travel"
         description="Read our latest travel tips, guides, and stories about Delhi Airport to Rishikesh Taxi Fare, and Ertiga 6 seater for Char Dham yatra." 
         canonicalUrl="https://bishttravels.com/blog" 
       />

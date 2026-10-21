@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <SEO 
-        title="Bisht Tour & Travels | 24/7 Cab Service in Rishikesh & Airport Drops" 
+        title="Soban Bisht Tour and Travel | 24/7 Cab Service in Rishikesh & Airport Drops"
         description="Book reliable, 24/7 taxi services in Rishikesh. We offer Char Dham Yatra packages, Delhi Airport transfers, and local one-way drops in our Swift Dzire and Ertiga cabs. Call 7895616847." 
         canonicalUrl="https://bishttravels.com/" 
       />

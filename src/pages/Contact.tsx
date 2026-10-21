@@ -5,8 +5,8 @@ export default function Contact() {
   return (
     <div className="flex flex-col w-full bg-editorial-bg min-h-[calc(100vh-64px)] text-editorial-text">
       <SEO 
-        title="Contact Us | Bisht Tour & Travels" 
-        description="Get in touch with Bisht Tour & Travels for inquiries, booking a cab, or planning your Char Dham Yatra. Available 24/7." 
+        title="Contact Us | Soban Bisht Tour and Travel"
+        description="Get in touch with Soban Bisht Tour and Travel for inquiries, booking a cab, or planning your Char Dham Yatra. Available 24/7."
         canonicalUrl="https://bishttravels.com/contact" 
       />
       {/* Page Header */}

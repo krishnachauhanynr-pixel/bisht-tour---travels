@@ -6,8 +6,8 @@ export default function About() {
   return (
     <div className="flex flex-col w-full bg-editorial-bg text-editorial-text">
       <SEO 
-        title="About Bisht Tour & Travels | Trusted Travel Agency in Shyampur" 
-        description="Located near HP Petrol Pump in Shyampur, Rishikesh, Bisht Tour & Travels provides experienced local drivers and 24-hour cab services for pilgrims and tourists." 
+        title="About Soban Bisht Tour and Travel | Trusted Travel Agency in Shyampur"
+        description="Owned by Soban Singh, Soban Bisht Tour and Travel provides experienced local drivers and 24-hour cab services for pilgrims and tourists in Rishikesh."
         canonicalUrl="https://bishttravels.com/about" 
       />
       {/* Page Header */}
@@ -32,7 +32,7 @@ export default function About() {
                   Best travel agency for Char Dham yatra in Rishikesh.
                 </h3>
                 <p className="text-editorial-subtext leading-relaxed">
-                  Welcome to Bisht Tour & Travels, a premier Shyampur travel agency. For years, we have been the go-to choice for tourists and pilgrims seeking reliable transportation in and around Rishikesh. As locals, we understand the nuances of mountain travel better than anyone else.
+                  Welcome to Soban Bisht Tour and Travel, owned by Soban Singh. We are a Shyampur travel agency serving tourists and pilgrims with reliable transportation in and around Rishikesh. As locals, we understand the nuances of mountain travel.
                 </p>
               </div>
 
