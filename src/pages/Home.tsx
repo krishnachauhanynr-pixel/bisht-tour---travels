@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <SEO 
-        title="Soban Bisht Tour and Travel | 24/7 Cab Service in Rishikesh & Airport Drops"
-        description="Book reliable, 24/7 taxi services in Rishikesh. We offer Char Dham Yatra packages, Delhi Airport transfers, and local one-way drops in our Swift Dzire and Ertiga cabs. Call 7895616847." 
+        title="Rishikesh Taxi Service & Cab Booking | Soban Bisht Tour and Travel"
+        description="Book a taxi in Rishikesh for local sightseeing, airport transfers, outstation trips and Uttarakhand tours with Soban Bisht Tour and Travel."
         canonicalUrl="https://bishttravels.com/" 
       />
       {/* Hero Section */}
@@ -35,11 +35,11 @@ export default function Home() {
             <span className="text-editorial-accent font-semibold text-xs uppercase tracking-[0.2em] mb-4">EST. 2026 • Rishikesh, Uttarakhand</span>
             
             <h1 className="font-serif text-4xl sm:text-5xl md:text-[64px] lg:text-[72px] leading-[1.1] md:leading-[1.05] text-editorial-text mb-6">
-              Top-Rated <span className="italic">Rishikesh Taxi</span> & Cab Services.
+              Reliable Taxi Service in Rishikesh for Local and Outstation Travel
             </h1>
             
             <p className="text-lg text-[#4A4A4A] max-w-xl leading-relaxed mb-10">
-              24/7 Cabs for Char Dham Yatra, Airport Transfers, & Local Drops. Whether you need a Delhi to Rishikesh taxi, Haridwar cab, or Dehradun taxi, safe and affordable journeys are guaranteed.
+              Book a Rishikesh cab for local sightseeing, Jolly Grant Airport transfers, outstation routes and Char Dham Yatra travel. Choose a Swift Dzire or Ertiga and contact us to confirm your route, travel dates and fare.
             </p>
             
             <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 items-center mb-8">
@@ -198,7 +198,7 @@ export default function Home() {
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Complete transportation packages for Yamunotri, Gangotri, Kedarnath, and Badrinath with experienced hill drivers.
                 </p>
-                <Link to="/services" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
+                <Link to="/char-dham-yatra" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
                   <span>View Details</span>
                   <span className="text-lg leading-none">→</span>
                 </Link>
@@ -220,7 +220,7 @@ export default function Home() {
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Reliable pickup and drop services connecting Delhi IGI Airport, Jolly Grant (Dehradun), to Rishikesh and nearby areas.
                 </p>
-                <Link to="/services" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
+                <Link to="/airport-transfer" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
                   <span>View Details</span>
                   <span className="text-lg leading-none">→</span>
                 </Link>
@@ -242,7 +242,7 @@ export default function Home() {
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Convenient one-way or round-trip taxi services for local sightseeing, business trips, or daily commuting around Rishikesh.
                 </p>
-                <Link to="/services" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
+                <Link to="/rishikesh-sightseeing" className="inline-flex items-center gap-2 text-editorial-accent font-bold uppercase text-[10px] tracking-widest hover:text-opacity-80 transition-colors">
                   <span>View Details</span>
                   <span className="text-lg leading-none">→</span>
                 </Link>

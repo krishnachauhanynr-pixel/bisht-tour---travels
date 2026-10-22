@@ -6,8 +6,8 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full bg-editorial-bg text-editorial-text">
       <SEO 
-        title="Char Dham Yatra Taxi & Delhi Airport Transfers | Soban Bisht Tour and Travel"
-        description="Affordable taxi rates in Rishikesh. Swift Dzire at ₹4000 and 7-seater Ertiga at ₹6500. We cover Delhi Airport to Rishikesh, Haridwar, Dehradun, and Ghansali." 
+        title="Taxi Services & Travel Routes in Rishikesh | Soban Bisht Tour and Travel"
+        description="Explore Rishikesh taxi services for airport transfers, local sightseeing, Char Dham Yatra and outstation travel. Ask us for route availability and a fare quote."
         canonicalUrl="https://bishttravels.com/services" 
       />
       {/* Page Header */}
@@ -17,6 +17,37 @@ export default function Services() {
           <p className="text-lg text-editorial-subtext max-w-2xl mx-auto font-light">
             Transparent pricing and reliable services for all your travel needs in Uttarakhand.
           </p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-editorial-bg border-b border-editorial-border">
+        <div className="container mx-auto px-4 md:px-10">
+          <div className="max-w-3xl mb-10">
+            <h2 className="font-serif text-3xl md:text-4xl text-editorial-text mb-4">Plan a trip from Rishikesh</h2>
+            <p className="text-editorial-subtext leading-relaxed">
+              Choose a service to see route details and get in touch about your travel dates, pickup point and vehicle requirements.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { title: 'Dehradun Airport Taxi', path: '/airport-transfer' },
+              { title: 'Rishikesh Local Sightseeing', path: '/rishikesh-sightseeing' },
+              { title: 'Char Dham Yatra Taxi', path: '/char-dham-yatra' },
+              { title: 'Kedarnath Taxi from Rishikesh', path: '/kedarnath-taxi' },
+              { title: 'Rishikesh to Haridwar & Mussoorie', path: '/taxi-routes' },
+              { title: 'Car Rental in Rishikesh', path: '/car-rental' },
+              { title: 'Tempo Traveller Availability', path: '/tempo-traveller' },
+            ].map((service) => (
+              <Link
+                key={service.path}
+                to={service.path}
+                className="flex items-center justify-between gap-4 p-5 bg-white border border-editorial-border text-editorial-text hover:border-editorial-text transition-colors"
+              >
+                <span className="font-medium">{service.title}</span>
+                <ArrowRight className="h-4 w-4 shrink-0 text-editorial-accent" aria-hidden="true" />
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
