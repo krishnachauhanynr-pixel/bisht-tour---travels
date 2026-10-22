@@ -204,29 +204,50 @@ export default function Services() {
           <div className="max-w-3xl mb-12">
             <h2 className="font-serif text-3xl md:text-5xl text-editorial-text mb-6">Frequently Asked Questions</h2>
             <p className="text-lg text-editorial-subtext border-l-2 border-editorial-text pl-6 leading-relaxed">
-              Common queries about our taxi services, Char Dham Yatra, and airport transfers.
+              Answers about bookings, airport transfers, outstation travel, fares, safety and cancellations.
             </p>
           </div>
           
           <div className="max-w-4xl space-y-6">
             <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
-              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Do you provide night taxis from Delhi Airport to Rishikesh?</h3>
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">How far in advance do I need to book a cab?</h3>
               <p className="text-editorial-subtext leading-relaxed">
-                Yes, we operate 24/7. Whether your flight lands at 2 AM or 2 PM, our drivers will be at Delhi Airport to safely drop you in Rishikesh, Haridwar, or Dehradun.
+                You can book a local ride on-demand or schedule it up to 30 days in advance. For outstation trips or airport transfers, we recommend booking at least 12 hours before departure to help ensure your preferred vehicle type is available and ready for the journey.
               </p>
             </div>
             
             <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
-              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Which car is best for the Char Dham Yatra?</h3>
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Are your airport transfer services available 24/7?</h3>
               <p className="text-editorial-subtext leading-relaxed">
-                For small families, our Swift Dzire is highly reliable. For groups of 5-6 people, we highly recommend our Maruti Ertiga (6+1 seater) as it provides extra legroom and luggage space for mountain travel.
+                Yes, our airport pick-up and drop-off services operate round-the-clock. We monitor flight schedules in real time so your driver can meet you at the designated pickup zone when you land, including in the event of a flight delay.
               </p>
             </div>
             
             <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
-              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Can I book a one-way cab from Rishikesh to Ghansali?</h3>
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Do your drivers have experience with mountain terrain for outstation trips?</h3>
               <p className="text-editorial-subtext leading-relaxed">
-                Absolutely. We offer one-way drops from Rishikesh to various mountain towns including Chamiyala, Ghansali, and Dehradun.
+                Our outstation drivers are experienced with hilly terrain and winding mountain roads. Whether you are traveling on routes around Rishikesh or to Haridwar, our drivers aim to make your journey smooth, safe and comfortable.
+              </p>
+            </div>
+
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">How is the pricing calculated for local vs. outstation trips?</h3>
+              <p className="text-editorial-subtext leading-relaxed">
+                Local cab services are billed on a fixed hourly or kilometre package. Outstation trips are calculated based on a standard per-kilometre rate, plus applicable tolls and state taxes. We provide a fare estimate upfront; confirm your trip's final fare and applicable charges with us before booking.
+              </p>
+            </div>
+
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">What safety and maintenance protocols are in place?</h3>
+              <p className="text-editorial-subtext leading-relaxed">
+                Every vehicle undergoes routine mechanical servicing and interior cleaning. Our drivers hold valid commercial licences and are expected to follow safe driving practices, including speed limits.
+              </p>
+            </div>
+
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">What is your cancellation and modification policy?</h3>
+              <p className="text-editorial-subtext leading-relaxed">
+                Contact us directly by phone or WhatsApp to request changes to your pickup details or cancel your ride. Cancellations made up to 4 hours before the scheduled pickup time are free of charge. Modifications are subject to vehicle availability.
               </p>
             </div>
           </div>
