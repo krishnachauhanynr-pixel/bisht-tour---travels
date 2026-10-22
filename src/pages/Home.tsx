@@ -1,8 +1,24 @@
+import type { FormEvent } from 'react';
 import { ArrowRight, Calendar, Clock, MapPin, ShieldCheck, Star, User, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 export default function Home() {
+  const requestCallBack = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const message = [
+      'Hello, I would like to request a call back.',
+      `Name: ${formData.get('name')}`,
+      `Phone: ${formData.get('phone')}`,
+      `Pickup Location: ${formData.get('pickup') || 'Not provided'}`,
+      `Drop Location: ${formData.get('drop') || 'Not provided'}`,
+    ].join('\n');
+
+    window.open(`https://wa.me/917895616847?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="flex flex-col w-full">
       <SEO 
@@ -62,11 +78,14 @@ export default function Home() {
             <div className="bg-white/90 backdrop-blur-md p-8 border border-editorial-border shadow-sm rounded-none">
               <h3 className="font-serif text-xl mb-6 text-editorial-text">Quick Inquiry</h3>
               
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-4" onSubmit={requestCallBack}>
                 <div>
                   <input 
                     type="text" 
+                    name="name"
+                    required
                     placeholder="Full Name" 
+                    aria-label="Full Name"
                     className="w-full p-3 bg-white border border-editorial-border text-sm outline-none focus:border-editorial-accent transition-colors"
                   />
                 </div>
@@ -74,7 +93,10 @@ export default function Home() {
                 <div>
                   <input 
                     type="tel" 
+                    name="phone"
+                    required
                     placeholder="Phone Number" 
+                    aria-label="Phone Number"
                     className="w-full p-3 bg-white border border-editorial-border text-sm outline-none focus:border-editorial-accent transition-colors"
                   />
                 </div>
@@ -83,14 +105,18 @@ export default function Home() {
                   <div>
                     <input 
                       type="text" 
+                      name="pickup"
                       placeholder="Pickup Location" 
+                      aria-label="Pickup Location"
                       className="w-full p-3 bg-white border border-editorial-border text-sm outline-none focus:border-editorial-accent transition-colors"
                     />
                   </div>
                   <div>
                     <input 
                       type="text" 
+                      name="drop"
                       placeholder="Drop Location" 
+                      aria-label="Drop Location"
                       className="w-full p-3 bg-white border border-editorial-border text-sm outline-none focus:border-editorial-accent transition-colors"
                     />
                   </div>
