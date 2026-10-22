@@ -11,7 +11,7 @@ export default function About() {
         canonicalUrl="https://bishttravels.com/about" 
       />
       {/* Page Header */}
-      <section className="bg-editorial-bg py-20 border-b border-editorial-border">
+      <section className="bg-editorial-bg py-12 sm:py-20 border-b border-editorial-border">
         <div className="container mx-auto px-4 md:px-10 text-center">
           <h1 className="font-serif text-4xl md:text-6xl text-editorial-text mb-4">About Us</h1>
           <p className="text-lg text-editorial-subtext max-w-2xl mx-auto font-light">
@@ -21,7 +21,7 @@ export default function About() {
       </section>
 
       {/* Intro & Mission */}
-      <section className="py-24">
+      <section className="py-14 sm:py-24">
         <div className="container mx-auto px-4 md:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-start">
             
@@ -70,7 +70,7 @@ export default function About() {
       </section>
 
       {/* Local Expertise */}
-      <section className="py-24 bg-white border-y border-editorial-border">
+      <section className="py-14 sm:py-24 bg-white border-y border-editorial-border">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-16 text-center mx-auto">
             <h2 className="font-serif text-3xl md:text-5xl text-editorial-text mb-6">Deep Local Expertise</h2>
@@ -97,7 +97,7 @@ export default function About() {
       </section>
 
       {/* Fleet Showcase */}
-      <section className="py-24 bg-editorial-bg">
+      <section className="py-14 sm:py-24 bg-editorial-bg">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-16">
             <h2 className="text-editorial-accent font-semibold text-xs uppercase tracking-[0.2em] mb-4">Our Vehicles</h2>
@@ -114,7 +114,7 @@ export default function About() {
               <div className="h-64 bg-gray-100 border-b border-editorial-border flex items-center justify-center p-8">
                 <span className="text-editorial-subtext font-serif italic text-lg group-hover:scale-105 transition-transform duration-500">Swift Dzire Image</span>
               </div>
-              <div className="p-8">
+              <div className="p-5 sm:p-8">
                 <div className="flex justify-between items-end mb-4 border-b border-editorial-border pb-4">
                   <h4 className="font-serif text-3xl text-editorial-text">Swift Dzire</h4>
                   <span className="text-xs uppercase tracking-widest text-editorial-subtext font-semibold">4 Seats</span>
@@ -133,7 +133,7 @@ export default function About() {
               <div className="h-64 bg-gray-100 border-b border-editorial-border flex items-center justify-center p-8">
                 <span className="text-editorial-subtext font-serif italic text-lg group-hover:scale-105 transition-transform duration-500">Maruti Ertiga Image</span>
               </div>
-              <div className="p-8">
+              <div className="p-5 sm:p-8">
                 <div className="flex justify-between items-end mb-4 border-b border-editorial-border pb-4">
                   <h4 className="font-serif text-3xl text-editorial-text">Maruti Ertiga</h4>
                   <span className="text-xs uppercase tracking-widest text-editorial-subtext font-semibold">6+1 Seats</span>

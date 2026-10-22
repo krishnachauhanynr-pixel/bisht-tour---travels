@@ -25,16 +25,16 @@ export default function Contact() {
         canonicalUrl="https://bishttravels.com/contact" 
       />
       {/* Page Header */}
-      <section className="bg-editorial-bg py-20 border-b border-editorial-border">
+      <section className="bg-editorial-bg py-12 sm:py-20 border-b border-editorial-border">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-serif text-4xl md:text-5xl text-editorial-text mb-4">Contact Us</h1>
           <p className="text-editorial-subtext font-light">We're here to help you plan your perfect trip.</p>
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-14 sm:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
             
             {/* Contact Info */}
             <div className="space-y-12">
@@ -71,7 +71,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form Placeholder */}
-            <div className="bg-white p-10 border border-editorial-border shadow-sm">
+            <div className="bg-white p-5 sm:p-8 lg:p-10 border border-editorial-border shadow-sm">
               <h3 className="font-serif text-2xl text-editorial-text mb-8">Send a Message</h3>
               <form className="space-y-6" onSubmit={sendInquiry}>
                 <div>

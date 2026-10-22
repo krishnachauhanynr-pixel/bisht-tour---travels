@@ -27,14 +27,14 @@ export default function Home() {
         canonicalUrl="https://bishttravels.com/" 
       />
       {/* Hero Section */}
-      <section className="w-full pt-12 pb-20 bg-editorial-bg">
+      <section className="w-full py-8 sm:pt-12 sm:pb-20 bg-editorial-bg">
         <div className="container mx-auto px-4 md:px-10 flex flex-col lg:flex-row gap-12">
           
           {/* Hero Content */}
           <div className="flex-1 flex flex-col justify-center max-w-3xl">
             <span className="text-editorial-accent font-semibold text-xs uppercase tracking-[0.2em] mb-4">EST. 2026 • Rishikesh, Uttarakhand</span>
             
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-[64px] lg:text-[72px] leading-[1.1] md:leading-[1.05] text-editorial-text mb-6">
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-[64px] lg:text-[72px] leading-[1.12] md:leading-[1.05] text-editorial-text mb-6">
               Reliable Taxi Service in Rishikesh for Local and Outstation Travel
             </h1>
             
@@ -74,8 +74,8 @@ export default function Home() {
           </div>
 
           {/* Quick Booking Widget */}
-          <div className="w-full max-w-md lg:w-5/12 flex flex-col gap-6 justify-center mx-auto lg:mx-0 mt-10 lg:mt-0">
-            <div className="bg-white/90 backdrop-blur-md p-8 border border-editorial-border shadow-sm rounded-none">
+          <div className="w-full max-w-md lg:w-5/12 flex flex-col gap-6 justify-center mx-auto lg:mx-0 mt-4 lg:mt-0">
+            <div className="bg-white/90 backdrop-blur-md p-5 sm:p-8 border border-editorial-border shadow-sm rounded-none">
               <h3 className="font-serif text-xl mb-6 text-editorial-text">Quick Inquiry</h3>
               
               <form className="space-y-4" onSubmit={requestCallBack}>
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white border-y border-editorial-border">
+      <section className="py-12 sm:py-20 bg-white border-y border-editorial-border">
         <div className="container mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <div className="flex flex-col text-left">
@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-24 bg-editorial-bg">
+      <section className="py-14 sm:py-24 bg-editorial-bg">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-16">
             <h2 className="text-editorial-accent font-semibold text-xs uppercase tracking-[0.2em] mb-4">What We Offer</h2>
@@ -193,7 +193,7 @@ export default function Home() {
                   loading="lazy"
                 />
               </div>
-              <div className="p-8">
+              <div className="p-5 sm:p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Char Dham Yatra</h4>
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Complete transportation packages for Yamunotri, Gangotri, Kedarnath, and Badrinath with experienced hill drivers.
@@ -215,7 +215,7 @@ export default function Home() {
                   loading="lazy"
                 />
               </div>
-              <div className="p-8">
+              <div className="p-5 sm:p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Airport Transfers</h4>
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Reliable pickup and drop services connecting Delhi IGI Airport, Jolly Grant (Dehradun), to Rishikesh and nearby areas.
@@ -237,7 +237,7 @@ export default function Home() {
                   loading="lazy"
                 />
               </div>
-              <div className="p-8">
+              <div className="p-5 sm:p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Local Cabs</h4>
                 <p className="text-editorial-subtext text-sm mb-6 line-clamp-3">
                   Convenient one-way or round-trip taxi services for local sightseeing, business trips, or daily commuting around Rishikesh.
@@ -253,7 +253,7 @@ export default function Home() {
       </section>
       
       {/* CTA Section */}
-      <section className="py-24 bg-editorial-text text-white">
+      <section className="py-14 sm:py-24 bg-editorial-text text-white">
         <div className="container mx-auto px-4 md:px-10 text-center flex flex-col items-center">
           <h2 className="font-serif text-4xl md:text-5xl text-white mb-6 max-w-2xl">Ready for your next journey?</h2>
           <p className="text-[#999] text-lg max-w-2xl mb-10 leading-relaxed font-light">

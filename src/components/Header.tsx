@@ -1,4 +1,4 @@
-import { Car, Phone, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -18,19 +18,19 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-editorial-border bg-editorial-bg/90 backdrop-blur-md">
-      <div className="container mx-auto px-4 md:px-10 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-10 min-h-16 py-2 lg:h-16 lg:py-0 flex items-center justify-between gap-3">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-4 group">
-          <span className="font-serif text-xl font-bold tracking-tight text-editorial-text">Soban Bisht Tour and Travel</span>
+        <Link to="/" className="flex min-w-0 items-center gap-4 group">
+          <span className="font-serif text-base sm:text-lg lg:text-xl font-bold leading-tight tracking-tight text-editorial-text">Soban Bisht Tour and Travel</span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
-              className={`text-[11px] uppercase tracking-[0.1em] font-semibold transition-colors hover:text-editorial-text ${
+              className={`whitespace-nowrap text-[11px] uppercase tracking-[0.1em] font-semibold transition-colors hover:text-editorial-text ${
                 isActive(link.path) ? 'text-editorial-text' : 'text-editorial-subtext'
               }`}
             >
@@ -40,7 +40,7 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex shrink-0">
           <a
             href="tel:+917895616847"
             className="bg-editorial-text hover:bg-gray-800 text-white px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors"
@@ -51,9 +51,11 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+          className="lg:hidden flex h-11 w-11 shrink-0 items-center justify-center text-gray-600 hover:text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-editorial-accent"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -61,14 +63,14 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-editorial-border bg-editorial-bg absolute left-0 w-full shadow-sm">
+        <div id="mobile-navigation" className="lg:hidden border-t border-editorial-border bg-editorial-bg absolute left-0 w-full max-h-[calc(100dvh-4rem)] overflow-y-auto shadow-sm">
           <nav className="flex flex-col py-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className={`px-6 py-3 text-[11px] uppercase tracking-[0.1em] font-semibold transition-colors hover:bg-gray-100 ${
+                className={`flex min-h-11 items-center px-6 py-3 text-xs uppercase tracking-[0.1em] font-semibold transition-colors hover:bg-gray-100 ${
                   isActive(link.path) ? 'text-editorial-text bg-gray-50' : 'text-editorial-subtext'
                 }`}
               >
@@ -78,7 +80,7 @@ export default function Header() {
             <div className="px-6 pt-4 pb-2 border-t border-editorial-border mt-2">
               <a
                 href="tel:+917895616847"
-                className="flex items-center justify-center bg-editorial-text text-white px-4 py-3 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors"
+                className="flex min-h-11 items-center justify-center bg-editorial-text text-white px-4 py-3 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors"
               >
                 📞 Call: 7895616847
               </a>

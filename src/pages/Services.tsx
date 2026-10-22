@@ -11,7 +11,7 @@ export default function Services() {
         canonicalUrl="https://bishttravels.com/services" 
       />
       {/* Page Header */}
-      <section className="bg-editorial-bg py-20 border-b border-editorial-border">
+      <section className="bg-editorial-bg py-12 sm:py-20 border-b border-editorial-border">
         <div className="container mx-auto px-4 md:px-10 text-center">
           <h1 className="font-serif text-4xl md:text-6xl text-editorial-text mb-4">Our Services & Pricing</h1>
           <p className="text-lg text-editorial-subtext max-w-2xl mx-auto font-light">
@@ -20,7 +20,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-20 bg-editorial-bg border-b border-editorial-border">
+      <section className="py-12 sm:py-20 bg-editorial-bg border-b border-editorial-border">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-10">
             <h2 className="font-serif text-3xl md:text-4xl text-editorial-text mb-4">Plan a trip from Rishikesh</h2>
@@ -52,18 +52,18 @@ export default function Services() {
       </section>
 
       {/* Services Details */}
-      <section className="py-24 bg-white border-b border-editorial-border">
+      <section className="py-14 sm:py-24 bg-white border-b border-editorial-border">
         <div className="container mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
             {/* Char Dham Yatra */}
-            <div className="bg-editorial-bg p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
               <img
                 src="/images/char-dham-yatra.png"
                 alt="The four sacred Char Dham temples in the Himalayas"
                 className="mb-6 h-48 w-full object-cover"
               />
-              <h3 className="font-serif text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Char Dham Yatra</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Char Dham Yatra</h3>
               <p className="text-editorial-subtext text-sm mb-6 flex-grow leading-relaxed">
                 Complete transportation packages for the sacred Char Dham circuit (Yamunotri, Gangotri, Kedarnath, Badrinath) or Do Dham. We provide dedicated, well-maintained vehicles with experienced hill drivers for the entire duration of your pilgrimage.
               </p>
@@ -87,29 +87,29 @@ export default function Services() {
             </div>
 
             {/* Airport Transfers */}
-            <div className="bg-editorial-bg p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
               <img
                 src="/images/airport-transfers.png"
                 alt="Airport departures and arrivals pickup and drop-off area"
                 className="mb-6 h-48 w-full object-cover"
               />
-              <h3 className="font-serif text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Delhi Airport Transfers</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Delhi Airport Transfers</h3>
               <p className="text-editorial-subtext text-sm mb-6 flex-grow leading-relaxed">
                 Reliable 24/7 pick-up and drop-off services connecting major transit hubs. Start or end your journey comfortably without worrying about schedules.
               </p>
               <div className="mb-8">
                 <h4 className="font-semibold text-editorial-text mb-3 text-[10px] uppercase tracking-[0.2em]">Covered Routes</h4>
                 <ul className="space-y-2">
-                  <li className="flex items-center justify-between text-sm text-editorial-subtext border-b border-editorial-border pb-2">
+                  <li className="flex flex-wrap items-center justify-between gap-x-2 text-sm text-editorial-subtext border-b border-editorial-border pb-2">
                     <span>Delhi IGI</span> <span className="text-editorial-accent">→</span> <span>Rishikesh</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm text-editorial-subtext border-b border-editorial-border pb-2">
+                  <li className="flex flex-wrap items-center justify-between gap-x-2 text-sm text-editorial-subtext border-b border-editorial-border pb-2">
                     <span>Delhi IGI</span> <span className="text-editorial-accent">→</span> <span>Dehradun</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm text-editorial-subtext border-b border-editorial-border pb-2">
+                  <li className="flex flex-wrap items-center justify-between gap-x-2 text-sm text-editorial-subtext border-b border-editorial-border pb-2">
                     <span>Delhi IGI</span> <span className="text-editorial-accent">→</span> <span>Haridwar</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm text-editorial-subtext border-b border-editorial-border pb-2">
+                  <li className="flex flex-wrap items-center justify-between gap-x-2 text-sm text-editorial-subtext border-b border-editorial-border pb-2">
                     <span>Delhi IGI</span> <span className="text-editorial-accent">→</span> <span>Chamiyala/Ghansali</span>
                   </li>
                 </ul>
@@ -120,8 +120,8 @@ export default function Services() {
             </div>
 
             {/* One-Way Cabs */}
-            <div className="bg-editorial-bg p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
-              <h3 className="font-serif text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">One-Way Cab Services</h3>
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
+              <h3 className="font-serif text-2xl sm:text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">One-Way Cab Services</h3>
               <p className="text-editorial-subtext text-sm mb-6 flex-grow leading-relaxed">
                 Cost-effective one-way taxi services for local and inter-city travel. Pay only for the drop, perfect for flexible travel plans.
               </p>
@@ -145,7 +145,7 @@ export default function Services() {
       </section>
 
       {/* Pricing Table */}
-      <section className="py-24 bg-editorial-bg">
+      <section className="py-14 sm:py-24 bg-editorial-bg">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-12">
             <h2 className="font-serif text-3xl md:text-5xl text-editorial-text mb-6">Transparent Pricing</h2>
@@ -156,33 +156,33 @@ export default function Services() {
 
           <div className="max-w-4xl">
             <div className="overflow-x-auto border-t border-editorial-text pb-4">
-              <table className="w-full text-left border-collapse min-w-[500px] md:min-w-0">
+              <table className="w-full table-fixed text-left border-collapse">
                 <thead>
-                  <tr className="border-b border-editorial-border text-[10px] uppercase tracking-[0.2em] text-[#999]">
-                    <th className="py-4 pr-6 font-semibold">Vehicle Type</th>
-                    <th className="py-4 px-6 font-semibold text-center">Seating Capacity</th>
-                    <th className="py-4 pl-6 font-semibold text-right">Standard Fare</th>
+                  <tr className="border-b border-editorial-border text-[9px] sm:text-[10px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[#999]">
+                    <th className="w-[48%] py-4 pr-2 sm:pr-6 font-semibold">Vehicle Type</th>
+                    <th className="w-[24%] py-4 px-1 sm:px-6 font-semibold text-center">Seats</th>
+                    <th className="w-[28%] py-4 pl-2 sm:pl-6 font-semibold text-right">Fare</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-editorial-border">
                   <tr className="hover:bg-white transition-colors">
-                    <td className="py-6 pr-6">
-                      <p className="font-serif text-2xl text-editorial-text">Swift Dzire one way cab</p>
+                    <td className="py-5 pr-2 sm:py-6 sm:pr-6">
+                      <p className="font-serif text-base sm:text-2xl text-editorial-text">Swift Dzire one way cab</p>
                       <p className="text-xs uppercase tracking-widest text-editorial-subtext mt-1">Sedan</p>
                     </td>
-                    <td className="py-6 px-6 text-center text-editorial-text font-medium">4 Seats</td>
-                    <td className="py-6 pl-6 text-right">
-                      <span className="font-serif text-3xl font-bold text-editorial-text">₹4,000</span>
+                    <td className="py-5 px-1 sm:py-6 sm:px-6 text-center text-xs sm:text-base text-editorial-text font-medium">4</td>
+                    <td className="py-5 pl-2 sm:py-6 sm:pl-6 text-right">
+                      <span className="font-serif text-xl sm:text-3xl font-bold text-editorial-text">₹4,000</span>
                     </td>
                   </tr>
                   <tr className="hover:bg-white transition-colors">
-                    <td className="py-6 pr-6">
-                      <p className="font-serif text-2xl text-editorial-text">Ertiga 6-seater</p>
+                    <td className="py-5 pr-2 sm:py-6 sm:pr-6">
+                      <p className="font-serif text-base sm:text-2xl text-editorial-text">Ertiga 6-seater</p>
                       <p className="text-xs uppercase tracking-widest text-editorial-subtext mt-1">MUV</p>
                     </td>
-                    <td className="py-6 px-6 text-center text-editorial-text font-medium">6+1 Seats</td>
-                    <td className="py-6 pl-6 text-right">
-                      <span className="font-serif text-3xl font-bold text-editorial-text">₹6,500</span>
+                    <td className="py-5 px-1 sm:py-6 sm:px-6 text-center text-xs sm:text-base text-editorial-text font-medium">6+1</td>
+                    <td className="py-5 pl-2 sm:py-6 sm:pl-6 text-right">
+                      <span className="font-serif text-xl sm:text-3xl font-bold text-editorial-text">₹6,500</span>
                     </td>
                   </tr>
                 </tbody>
@@ -199,7 +199,7 @@ export default function Services() {
       </section>
 
       {/* FAQs Section */}
-      <section className="py-24 bg-white border-b border-editorial-border">
+      <section className="py-14 sm:py-24 bg-white border-b border-editorial-border">
         <div className="container mx-auto px-4 md:px-10">
           <div className="max-w-3xl mb-12">
             <h2 className="font-serif text-3xl md:text-5xl text-editorial-text mb-6">Frequently Asked Questions</h2>
@@ -209,22 +209,22 @@ export default function Services() {
           </div>
           
           <div className="max-w-4xl space-y-6">
-            <div className="bg-editorial-bg p-8 border border-editorial-border">
-              <h3 className="font-serif text-2xl text-editorial-text mb-3">Do you provide night taxis from Delhi Airport to Rishikesh?</h3>
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Do you provide night taxis from Delhi Airport to Rishikesh?</h3>
               <p className="text-editorial-subtext leading-relaxed">
                 Yes, we operate 24/7. Whether your flight lands at 2 AM or 2 PM, our drivers will be at Delhi Airport to safely drop you in Rishikesh, Haridwar, or Dehradun.
               </p>
             </div>
             
-            <div className="bg-editorial-bg p-8 border border-editorial-border">
-              <h3 className="font-serif text-2xl text-editorial-text mb-3">Which car is best for the Char Dham Yatra?</h3>
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Which car is best for the Char Dham Yatra?</h3>
               <p className="text-editorial-subtext leading-relaxed">
                 For small families, our Swift Dzire is highly reliable. For groups of 5-6 people, we highly recommend our Maruti Ertiga (6+1 seater) as it provides extra legroom and luggage space for mountain travel.
               </p>
             </div>
             
-            <div className="bg-editorial-bg p-8 border border-editorial-border">
-              <h3 className="font-serif text-2xl text-editorial-text mb-3">Can I book a one-way cab from Rishikesh to Ghansali?</h3>
+            <div className="bg-editorial-bg p-5 sm:p-8 border border-editorial-border">
+              <h3 className="font-serif text-xl sm:text-2xl text-editorial-text mb-3">Can I book a one-way cab from Rishikesh to Ghansali?</h3>
               <p className="text-editorial-subtext leading-relaxed">
                 Absolutely. We offer one-way drops from Rishikesh to various mountain towns including Chamiyala, Ghansali, and Dehradun.
               </p>
@@ -234,7 +234,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-editorial-text text-white">
+      <section className="py-14 sm:py-24 bg-editorial-text text-white">
         <div className="container mx-auto px-4 md:px-10 text-center flex flex-col items-center">
           <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 max-w-2xl">Need a custom itinerary or have specific requirements?</h2>
           <Link 
