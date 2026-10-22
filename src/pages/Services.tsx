@@ -27,6 +27,11 @@ export default function Services() {
             
             {/* Char Dham Yatra */}
             <div className="bg-editorial-bg p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
+              <img
+                src="/images/char-dham-yatra.png"
+                alt="The four sacred Char Dham temples in the Himalayas"
+                className="mb-6 h-48 w-full object-cover"
+              />
               <h3 className="font-serif text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Char Dham Yatra</h3>
               <p className="text-editorial-subtext text-sm mb-6 flex-grow leading-relaxed">
                 Complete transportation packages for the sacred Char Dham circuit (Yamunotri, Gangotri, Kedarnath, Badrinath) or Do Dham. We provide dedicated, well-maintained vehicles with experienced hill drivers for the entire duration of your pilgrimage.
@@ -52,6 +57,11 @@ export default function Services() {
 
             {/* Airport Transfers */}
             <div className="bg-editorial-bg p-8 border border-editorial-border flex flex-col h-full hover:border-editorial-text transition-colors">
+              <img
+                src="/images/airport-transfers.png"
+                alt="Airport departures and arrivals pickup and drop-off area"
+                className="mb-6 h-48 w-full object-cover"
+              />
               <h3 className="font-serif text-3xl text-editorial-text mb-4 border-b border-editorial-border pb-4">Delhi Airport Transfers</h3>
               <p className="text-editorial-subtext text-sm mb-6 flex-grow leading-relaxed">
                 Reliable 24/7 pick-up and drop-off services connecting major transit hubs. Start or end your journey comfortably without worrying about schedules.

@@ -185,8 +185,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="group bg-white border border-editorial-border hover:border-editorial-text transition-colors">
-              <div className="h-48 bg-gray-100 border-b border-editorial-border flex items-center justify-center text-editorial-subtext">
-                <span className="font-serif italic text-lg">Yatra Focus</span>
+              <div className="h-48 bg-gray-100 border-b border-editorial-border">
+                <img
+                  src="/images/char-dham-yatra.png"
+                  alt="The four sacred Char Dham temples in the Himalayas"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Char Dham Yatra</h4>
@@ -202,8 +207,13 @@ export default function Home() {
 
             {/* Service 2 */}
             <div className="group bg-white border border-editorial-border hover:border-editorial-text transition-colors">
-              <div className="h-48 bg-gray-100 border-b border-editorial-border flex items-center justify-center text-editorial-subtext">
-                <span className="font-serif italic text-lg">Seamless Transit</span>
+              <div className="h-48 bg-gray-100 border-b border-editorial-border">
+                <img
+                  src="/images/airport-transfers.png"
+                  alt="Airport departures and arrivals pickup and drop-off area"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Airport Transfers</h4>
@@ -219,8 +229,13 @@ export default function Home() {
 
             {/* Service 3 */}
             <div className="group bg-white border border-editorial-border hover:border-editorial-text transition-colors">
-              <div className="h-48 bg-gray-100 border-b border-editorial-border flex items-center justify-center text-editorial-subtext">
-                <span className="font-serif italic text-lg">Local Routes</span>
+              <div className="h-48 bg-gray-100 border-b border-editorial-border">
+                <img
+                  src="/images/local-cab-services.png"
+                  alt="Local cab service car ready for pickup"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
               <div className="p-8">
                 <h4 className="font-serif text-2xl text-editorial-text mb-3">Local Cabs</h4>
