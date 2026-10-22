@@ -95,6 +95,38 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <section className="py-12 sm:py-16 bg-white border-t border-editorial-border">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+            <div>
+              <h2 className="font-serif text-3xl sm:text-4xl text-editorial-text mb-2">Find Our Location</h2>
+              <p className="text-editorial-subtext">Shyampur, Rishikesh, Uttarakhand, India</p>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=30.058361%2C78.226417"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center justify-center px-5 py-3 bg-editorial-text text-white text-xs font-bold uppercase tracking-widest transition-colors hover:bg-gray-800"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+          <div className="overflow-hidden border border-editorial-border bg-editorial-bg">
+            <iframe
+              title="Map showing Soban Bisht Tour and Travel in Shyampur, Rishikesh"
+              src="https://maps.google.com/maps?q=30.058361%2C78.226417&z=15&output=embed"
+              className="block h-[320px] w-full sm:h-[420px]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+          <p className="mt-3 text-sm text-editorial-subtext">
+            Coordinates: 30°03′30.1″N, 78°13′35.1″E
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
