@@ -46,11 +46,21 @@ export default function About() {
 
             <div className="w-full lg:w-1/2">
               <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gray-200 h-72 relative flex items-center justify-center border border-editorial-border">
-                  <span className="text-editorial-subtext font-serif italic">Mountain Roads View</span>
+                <div className="h-72 relative overflow-hidden border border-editorial-border">
+                  <img
+                    src="/images/mountain-roads-view.png"
+                    alt="Winding mountain road through the Uttarakhand Himalayas"
+                    className="h-full w-full object-cover"
+                  />
+                  <span className="absolute inset-x-0 bottom-0 bg-black/50 px-3 py-2 text-center font-serif italic text-white">Mountain Roads View</span>
                 </div>
-                <div className="bg-gray-200 h-72 relative mt-12 flex items-center justify-center border border-editorial-border">
-                  <span className="text-editorial-subtext font-serif italic">Happy Travelers</span>
+                <div className="h-72 relative mt-12 overflow-hidden border border-editorial-border">
+                  <img
+                    src="/images/happy-travelers.png"
+                    alt="Happy travelers enjoying a road trip in the Himalayas"
+                    className="h-full w-full object-cover"
+                  />
+                  <span className="absolute inset-x-0 bottom-0 bg-black/50 px-3 py-2 text-center font-serif italic text-white">Happy Travelers</span>
                 </div>
               </div>
             </div>
